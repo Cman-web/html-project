@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Polyglot - Piratical PyScript</title>
+    <link rel="stylesheet" href="https://pyscript.net/releases/2025.3.1/core.css">
+    <script type="module" src="https://pyscript.net/releases/2025.3.1/core.js"></script>
+
+    <style>
+        body {
+            background-color: #0b0b0b;
+            color: #fff;
+            font-family: monospace;
+            padding: 20px;
+            text-align: center;
+        }
+
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: hotpink;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+
+        a:hover {
+            background-color: #ff8ecb;
+        }
+
+        #output {
+            margin-top: 20px;
+            font-size: 1.1em;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Polyglot - Piratical PyScript</h1>
+
+    <p>This page runs Python in your browser using PyScript!</p>
+
+    <!-- Example PyScript running in the page -->
+    <py-script>
+        from datetime import datetime
+        now = datetime.now()
+        display(f"Ahoy! Current time be: {now.strftime('%H:%M:%S')}")
+    </py-script>
+
+    <div id="output"></div>
+
+    <!-- If you want to link to another Python file, that file needs to be .py and you should load it via PyScript -->
+    <!-- Example linking to another file (if you have matrix.py locally or hosted properly): -->
+    <py-script src="matrix.py"></py-script>
+
+    <!-- Simple link to file if you just want it as a download -->
+    <a href="matrix.py" download>Download matrix.py</a>
+
+</body>
+</html>
+
+
