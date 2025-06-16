@@ -5,36 +5,79 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me</title>
     <link rel="stylesheet" href="fart.css">
-    
-    <!-- Google Font -->
+
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 
     <style>
         body {
-            background-color: hotpink;
-            font-family: 'Roboto', sans-serif;
             margin: 0;
-            padding: 20px;
+            font-family: 'Roboto', sans-serif;
+            background-color: hotpink;
             color: white;
             text-align: center;
         }
 
-        h1 {
-            font-size: 2.5em;
-            margin-bottom: 10px;
+        header {
+            background: #222;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 5px solid #ffb6c1;
         }
 
-        p {
-            font-size: 1.2em;
-            max-width: 600px;
-            margin: 0 auto 30px auto;
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            color: #ff69b4;
+        }
+
+        header h1 a {
+            color: #ff69b4;
+            text-decoration: none;
+        }
+
+        header h1 a:hover {
+            color: white;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 20px 0 0 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        nav a {
+            color: #ffb6c1;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: white;
         }
 
         img {
             border-radius: 50%;
             border: 5px solid white;
             box-shadow: 0 4px 12px rgba(0,0,0,0.4);
-            margin-top: 20px;
+            margin-top: 30px;
+            width: 360px;
+            height: 360px;
+        }
+
+        h2 {
+            font-size: 2.5em;
+            margin: 20px 0 10px 0;
+        }
+
+        p {
+            font-size: 1.2em;
+            max-width: 600px;
+            margin: 0 auto 30px auto;
+            padding: 0 10px;
         }
 
         .button-group {
@@ -42,9 +85,10 @@
             justify-content: center;
             gap: 15px;
             flex-wrap: wrap;
+            margin-bottom: 30px;
         }
 
-        a {
+        .button-group a {
             display: inline-block;
             padding: 10px 20px;
             background-color: white;
@@ -55,16 +99,29 @@
             transition: all 0.3s ease;
         }
 
-        a:hover {
+        .button-group a:hover {
             background-color: #ffb6c1;
             color: white;
         }
     </style>
 </head>
-<body>
-    <img src="img/me_frfr.jpg" alt="A photo of me" width="360" height="360"><br>
 
-    <h1>ABOUT ME :3</h1>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutme.htm">About Me</a></li>
+                <li><a href="contact.html">Contacts</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="intrests.html">My Interests</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <img src="img/me_frfr.jpg" alt="A photo of me">
+
+    <h2>ABOUT ME :3</h2>
 
     <p>
         Hi! I'm <strong>Camis_tired</strong> — I’m many things: a student, gay, a coding enthusiast, fun-loving, and much, much more.
@@ -72,7 +129,6 @@
 
     <div class="button-group">
         <a href="intrests.html">My Interests</a>
-        <a href="index.html">Back Home</a>
     </div>
 </body>
 </html>

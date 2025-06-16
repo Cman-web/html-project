@@ -4,16 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Utilities and Tools</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
             background-color: hotpink;
-            font-family: sans-serif;
+            font-family: 'Roboto', sans-serif;
             color: white;
+            margin: 0;
+            padding: 0;
             text-align: center;
-            padding: 40px;
         }
 
-        a {
+        .main-nav {
+            background: #222;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 5px solid #ffb6c1;
+        }
+
+        .main-nav a {
+            color: #ffb6c1;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+
+        .main-nav a:hover {
+            color: white;
+        }
+
+        h1 {
+            margin: 30px 0 20px;
+            font-size: 2.5em;
+        }
+
+        .tool-link {
             display: inline-block;
             margin: 10px;
             padding: 10px 20px;
@@ -22,24 +48,31 @@
             text-decoration: none;
             border-radius: 8px;
             font-weight: bold;
-            transition: background-color 0.3s;
+            transition: background-color 0.3s, color 0.3s;
         }
 
-        a:hover {
+        .tool-link:hover {
             background-color: #ffb6c1;
             color: white;
         }
     </style>
 </head>
 <body>
-    <h1>Tools and Scripts</h1>
 
-    <a href="index.html">Back Home</a><br><br>
+    <nav class="main-nav">
+        <a href="index.html"> Home</a>
+        <a href="aboutme.htm">About Me</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+        <a href="intrests.html">My Interests</a>
+    </nav>
 
-    <!-- Give each link a clear label -->
-    <a href="compund_fration_web.html">Compound Fraction Calculator</a>
-    <a href="mateix.py" download>Download Matrix Solver (Python)</a>
-    <a href="sim_equations.py" download>Download Simultaneous Equations Solver (Python)</a>
-    <a href="compound_intresed.py" download>Download Compound Interest Calculator (Python)</a>
+    <h1>Utilities and Tools</h1>
+
+    <a class="tool-link" href="compund_fration_web.html">Compound Fraction Calculator (Web)</a><br>
+    <a class="tool-link" href="matrix.py" download>Download Matrix Solver (Python)</a><br>
+    <a class="tool-link" href="sim_equations.py" download>Download Simultaneous Equations Solver (Python)</a><br>
+    <a class="tool-link" href="compound_intresed.py" download>Download Compound Interest Calculator (Python)</a>
+
 </body>
 </html>

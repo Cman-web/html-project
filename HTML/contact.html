@@ -1,62 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>All My Contact Info</title>
     <style>
         body {
             background-color: hotpink;
-            font-family: sans-serif;
+            font-family: 'Roboto', sans-serif;
             color: white;
-            text-align: center;
             margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        header {
+            background: #222;
             padding: 20px;
+            text-align: center;
+            border-bottom: 5px solid #ffb6c1;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            color: #ff69b4;
+        }
+
+        header h1 a {
+            color: #ff69b4;
+            text-decoration: none;
+        }
+
+        header h1 a:hover {
+            color: white;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 20px 0 0 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        nav a {
+            color: #ffb6c1;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: white;
+        }
+
+        h2 {
+            font-size: 2.2em;
+            margin-top: 30px;
         }
 
         img {
             border-radius: 12px;
             box-shadow: 0 4px 10px rgba(0,0,0,0.4);
-            margin-bottom: 20px;
+            margin: 20px auto;
+            max-width: 320px;
+            height: auto;
+            display: block;
         }
 
         .contact-info {
-            margin-bottom: 20px;
             font-size: 1.1em;
+            margin-bottom: 30px;
+            max-width: 400px;
+            margin-left: auto;
+            margin-right: auto;
         }
 
-        a {
+        .contact-info p strong {
+            color: #fff700;
+        }
+
+        .button-link {
             display: inline-block;
             margin: 10px;
             padding: 10px 20px;
             background-color: white;
             color: hotpink;
-            text-decoration: none;
             font-weight: bold;
+            text-decoration: none;
             border-radius: 8px;
-            transition: background-color 0.3s;
+            transition: background-color 0.3s, color 0.3s;
         }
 
-        a:hover {
+        .button-link:hover {
             background-color: #ffb6c1;
             color: white;
         }
     </style>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
 </head>
 <body>
-    <h1>All My Contact Info</h1>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutme.htm">About Me</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contacts</a></li>
+                <li><a href="intrests.html">My Interests</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <img src="img/IDK.jpg" alt="Funny broken image?" height="320" width="320">
+    <h2>All My Contact Info</h2>
+
+    <img src="img/IDK.jpg" alt="Funny broken image?" />
 
     <div class="contact-info">
         <p><strong>Phone:</strong> (+61) 401 949 723</p>
-        <p><strong>Email:</strong> <a href="mailto:cgteasdale@outlook.com">cgteasdale@outlook.com</a></p>
+        <p><strong>Email:</strong> <a href="mailto:cgteasdale@outlook.com" style="color:#fff; text-decoration: underline;">cgteasdale@outlook.com</a></p>
         <p><strong>Roblox:</strong> Camis_tired</p>
         <p><strong>Steam:</strong> Cam_tea</p>
-        <p><strong>Discord:</strong> camis_tired#1234</p> <!-- use real username & tag -->
+        <p><strong>Discord:</strong> camis_tired#1234</p> 
     </div>
 
-    <a href="https://github.com/Cman-web" target="_blank">My GitHub Page</a>
-    <a href="index.html">Back Home</a>
+    <a href="https://github.com/Cman-web" target="_blank" class="button-link">My GitHub Page</a>
 </body>
 </html>

@@ -10,13 +10,52 @@
     <style>
         body {
             background-color: #0b0b0b;
-            color: #fff;
+            color: white;
             font-family: monospace;
-            padding: 20px;
+            margin: 0;
+            padding: 0;
             text-align: center;
         }
 
-        a {
+        .main-nav {
+            background-color: #222;
+            padding: 10px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 3px solid hotpink;
+        }
+
+        .main-nav a {
+            color: hotpink;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+
+        .main-nav a:hover {
+            color: white;
+        }
+
+        h1 {
+            margin-top: 20px;
+            font-size: 2.5em;
+            color: hotpink;
+        }
+
+        p {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+
+        #output {
+            margin-top: 20px;
+            font-size: 1.1em;
+            color: #ff8ecb;
+        }
+
+        .button-link {
             display: inline-block;
             margin-top: 20px;
             padding: 10px 20px;
@@ -25,25 +64,28 @@
             text-decoration: none;
             border-radius: 8px;
             font-weight: bold;
+            transition: background-color 0.3s;
         }
 
-        a:hover {
+        .button-link:hover {
             background-color: #ff8ecb;
-        }
-
-        #output {
-            margin-top: 20px;
-            font-size: 1.1em;
         }
     </style>
 </head>
 
 <body>
+    <nav class="main-nav">
+        <a href="index.html">🏠 Home</a>
+        <a href="aboutme.html">About Me</a>
+        <a href="contact.html">Contact</a>
+        <a href="projects.html">Projects</a>
+        <a href="intrests.html">My Interests</a>
+    </nav>
+
     <h1>Polyglot - Piratical PyScript</h1>
 
     <p>This page runs Python in your browser using PyScript!</p>
 
-    <!-- Example PyScript running in the page -->
     <py-script>
         from datetime import datetime
         now = datetime.now()
@@ -52,14 +94,9 @@
 
     <div id="output"></div>
 
-    <!-- If you want to link to another Python file, that file needs to be .py and you should load it via PyScript -->
-    <!-- Example linking to another file (if you have matrix.py locally or hosted properly): -->
     <py-script src="matrix.py"></py-script>
 
-    <!-- Simple link to file if you just want it as a download -->
-    <a href="matrix.py" download>Download matrix.py</a>
+    <a class="button-link" href="matrix.py" download>Download matrix.py</a>
 
 </body>
 </html>
-
-

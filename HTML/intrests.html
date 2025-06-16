@@ -11,29 +11,48 @@
             font-family: 'Roboto', sans-serif;
             color: white;
             margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        .main-nav {
+            background: #222;
             padding: 20px;
             text-align: center;
+            border-bottom: 5px solid #ffb6c1;
+        }
+
+        .main-nav a {
+            color: #ffb6c1;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+
+        .main-nav a:hover {
+            color: white;
         }
 
         h1 {
             font-size: 2.5em;
-            margin-bottom: 20px;
+            margin: 30px 0 20px;
         }
 
         p {
             font-size: 1.2em;
             max-width: 700px;
-            margin: 0 auto 20px auto;
+            margin: 0 auto 20px;
             line-height: 1.6;
         }
 
         strong {
-            color: #fff700; /* fun bright yellow to emphasize */
+            color: #fff700;
         }
 
-        a {
+        .button-link {
             display: inline-block;
-            margin-top: 20px;
+            margin: 20px auto;
             padding: 10px 20px;
             background-color: white;
             color: hotpink;
@@ -43,13 +62,21 @@
             transition: background-color 0.3s, color 0.3s;
         }
 
-        a:hover {
+        .button-link:hover {
             background-color: #ffb6c1;
             color: white;
         }
     </style>
 </head>
 <body>
+
+    <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="aboutme.htm">About Me</a>
+        <a href="contact.html">Contact</a>
+        <a href="projects.html">Projects</a>
+        <a href="intrests.html">My Interests</a>
+    </nav>
 
     <h1>My Interests</h1>
 
@@ -67,6 +94,5 @@
         And I love learning because I’m a nerd. :)
     </p>
 
-    <a href="index.html">Back Home</a>
 </body>
 </html>
